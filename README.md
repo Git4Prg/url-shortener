@@ -59,12 +59,12 @@ API Endpoints
     
 Running the Application
 
-  Clone the repository
-  Configure database settings in application.properties
-  Run with Maven:
-    ./mvnw spring-boot:run
+  1. Clone the repository
+  
+  2. Configure database settings in application.properties
+  
+  3. Run with Maven:
+     ./mvnw spring-boot:run
 
-  Build
-  To build the project:
-
-    ./mvnw clean install
+  4. Build - To build the project:
+     ./mvnw clean install
