@@ -29,31 +29,42 @@ A robust URL shortening service built with Spring Boot that allows users to crea
 Configure the following properties in `application.properties`:
 
 
-spring.datasource.url=jdbc:mysql://localhost:3306/url_shortener_db
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-jwt.secret=your_jwt_secret
-jwt.expiration=178200000
-frontend.url=http://localhost:5173
+  spring.datasource.url=jdbc:mysql://localhost:3306/url_shortener_db
+
+  spring.datasource.username=your_username
+
+  spring.datasource.password=your_password
+
+  jwt.secret=your_jwt_secret
+
+  jwt.expiration=178200000
+
+  frontend.url=http://localhost:5173
 
 
 API Endpoints
-Authentication
-POST /api/auth/public/register - Register new user
-POST /api/auth/public/login - Login user
-URL Operations
-POST /api/urls/shorten - Create short URL
-GET /api/urls/myurls - Get user's URLs
-GET /api/urls/analytics/{shortUrl} - Get URL analytics
-GET /api/urls/totalClicks - Get total clicks statistics
-GET /{shortUrl} - Redirect to original URL
+
+  Authentication
+
+    POST /api/auth/public/register - Register new user
+    POST /api/auth/public/login - Login user
+  URL Operations
+  
+    POST /api/urls/shorten - Create short URL
+    GET /api/urls/myurls - Get user's URLs
+    GET /api/urls/analytics/{shortUrl} - Get URL analytics
+    GET /api/urls/totalClicks - Get total clicks statistics
+    GET /{shortUrl} - Redirect to original URL
+
+    
 Running the Application
-Clone the repository
-Configure database settings in application.properties
-Run with Maven:
-./mvnw spring-boot:run
 
-Build
-To build the project:
+  Clone the repository
+  Configure database settings in application.properties
+  Run with Maven:
+    ./mvnw spring-boot:run
 
-./mvnw clean install
+  Build
+  To build the project:
+
+    ./mvnw clean install
